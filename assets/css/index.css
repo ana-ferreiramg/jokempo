@@ -1,4 +1,4 @@
-header#index {
+header {
     justify-content: center;
 }
 
@@ -65,4 +65,54 @@ header#index {
     transition: ease 0.2s;
     color: var(--color-links);
     box-shadow: 0px 0px 8px var(--color-links);
+}
+
+/* ####### RESPONSIVE ####### */
+@media (min-width: 600px) {
+    header {
+        margin: 30px;
+    }
+
+    header .logo {
+        margin-top: 5vh;
+    }
+
+    .stage {
+        height: 70%;
+    }
+
+    .stage .background-game img {
+        width: 80%;
+    }
+
+    .stage > .title {
+        margin: 30px 0 15px;
+        font-size: 32px;
+    }
+    
+    .stage > .subtitle {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+
+    .stage > .button {
+        width: 230px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 900px) {
+    .stage .background-game img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        font-size: 45px;
+    }
+
+    .stage > .title {
+        font-size: 35px;
+    }
 }
