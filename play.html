@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <link href="https://fonts.googleapis.com/css?
+family=Bitter:400,400i,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?
+family=Comfortaa:300,400,500,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/play.css">
+
+        <title>Jokempo Game</title>
+    </head>
+    <body class="shadows">
+        <header>
+            <h1 class="logo">Jokempo</h1>
+            <nav class="menu">
+                <a class="button" href="index.html">Home</a>
+            </nav>
+        </header>
+        
+        <section class="stage-play">
+            <div class="rounds">
+                <div class="count">
+                    <h1 class="round">Round</h1>
+                    <span id="round-count" onclick="roundCount()">1</span>
+                </div>
+                
+                <div class="scoreboard">
+                    <span id="player-score">0</span>
+                    -
+                    <span id="IA-score">0</span>
+                </div>
+            </div>
+            
+            <div class="start-play">
+                <div class="game">
+                    <div class="start">
+                        <div class=you>
+                            <h2>You</h2>
+                            <img class="hand-player" id="player-choice" src="assets/img/hands/rock.png"/>
+                        </div>
+                        
+                        <img id="img-vs" src="assets/img/hands/versus.svg"/>
+    
+                        <div class="IA">
+                            <h2>PC</h2>
+                            <img class="hand-ia" id="IA-choice" src="assets/img/hands/rock.png" onload="changeImage()"/>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="player-choices">
+                    <ul>
+                        <li>
+                            <a id="player-choice-1" onclick="play(1)"><img src="assets/img/hands/hands-button/rock-button.svg"></a>
+                        </li>
+                        <li>
+                            <a id="player-choice-2" onclick="play(2)"><img src="assets/img/hands/hands-button/paper-button.svg"></a>
+                        </li>
+                        <li>
+                            <a id="player-choice-3" onclick="play(3)"><img src="assets/img/hands/hands-button/scissors-button.svg"></a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="ties">
+                    <h1>Nº ties</h1>
+                    <span id="number-ties">0</span>
+                </div>
+                
+                <div id="posts">
+                    &nbsp
+                </div>
+
+                <a class="button restart-button" onclick="restartGame()">Restart Game</a>
+                <!-- Ícones feitos por <a href="https://www.flaticon.com/br/autores/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a>
+                Ícones feitos por <a href="https://flat-icons.com/" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a> -->
+            </div>
+            
+        </section>
+
+    </body>
+</html>

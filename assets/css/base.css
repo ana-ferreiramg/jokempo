@@ -45,11 +45,13 @@ header {
 }
 
 .button {
-    background-color: var(--bg-secondary);
+    background-color: var(--color-secondary);
     color: var(--bg-primary);
     border-radius: 4px;
     text-decoration: none;
     font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    font-weight: bold;
 }
 
 .button:hover {
